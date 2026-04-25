@@ -4,11 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="CV one-page front-end avec jQuery">
+	<meta name="description" content="CV professionnel one-page front-end avec jQuery">
 	<meta name="keywords" content="cv, mode sombre, impression, formation, expérience, compétences">
 	<meta name="author" lang="fr" content="Chedjou Wokam Ange Maeva">
 	<meta name="robots" content="index, follow">
-	<title>CV - Ange Maeva</title>
+	<title>CV - Chedjou Wokam Ange Maeva</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,7 +19,7 @@
 		<aside class="sidebar">
 
 			<div class="divPhoto" aria-hidden="true">
-				<img src="img/profil.webp" alt="Photo de profil" class="photo">
+				<img src="img/photo.png" alt="Photo de profil" class="photo">
 			</div>
 
 			<section class="block">
@@ -31,14 +32,12 @@
 
 			<section class="block infoPerso">
 				<h3>Informations personnelles</h3>
-				<ul  class="contact">
-					<li>Adresse : Chaussée du Roeulx 1137, 7021 Mons</li>
-					<li>GSM : +32 465 20 11 62</li>
-					<li>E-mail : chedjouangemaevav@gmail.com</li>
-					<li>Date de naissance: 19/08/2005</li>
-					<li>Nationalité: Camerounaise</li>
-					<li>Ville: Mons</li>
-					<li>Statut: Étudiante</li>
+				<ul class="contact">
+					<li><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Adresse : Chaussée du Roeulx 1137, 7021 Mons</span></li>
+					<li><i class="fas fa-phone-alt" aria-hidden="true"></i><span>GSM : +32 465 20 11 62</span></li>
+					<li><i class="fas fa-envelope" aria-hidden="true"></i><span>E-mail : chedjouangemaevav@gmail.com</span></li>
+					<li><i class="fas fa-birthday-cake" aria-hidden="true"></i><span>Date de naissance : 19/08/2005</span></li>
+					<li><i class="fas fa-user-graduate" aria-hidden="true"></i><span>Statut : Étudiante</span></li>
 				</ul>
 			</section>
 
@@ -63,10 +62,10 @@
 		<section class="content">
 			<section class="contactSection">
 				<div class="fonctionnalites">
-					<button id="modeSombre" aria-pressed="false" aria-label="Activer le mode sombre">Mode sombre</button>
-					<button id="imprimer" aria-label="Imprimer le CV">Imprimer</button>
+					<button id="modeSombre" aria-pressed="false" aria-label="Activer le mode sombre"><i class="fas fa-moon"></i></button>
+					<button id="imprimer" aria-label="Imprimer le CV"><i class="fas fa-print"></i></button>
 				</div>
-				<h1>ANGE&nbsp;MAEVA<br>CHEDJOU WOKAM</h1>
+				<h1>ANGE&nbsp;MAEVA<br>CHEDJOU&nbsp;WOKAM</h1>
 				<p class="texteDynamique" aria-live="polite"></p>
 				
 			</section>
@@ -89,8 +88,7 @@
 					</div>
 					<div class="descriptionExperience">
 						<p>Conception et développement d'un jeu vidéo avec Pygame.</p>
-						<p>Programmation d'un module autonome en Python avec Raspberry Pi mettant en avant la
-							méthodologie Scrum pour la gestion de projets.</p>
+						<p>Développement d'un module autonome en Python sur Raspberry Pi - gestion de projet en méthodologie Scrum.</p>
 					</div>
 				</article>
 			</section>
@@ -164,18 +162,16 @@
 					<p>Windows Server
 						<meter value="6" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</p>
-					<p>Cybersécurité
+					<p>Réseaux informatiques/Cybersécurité
 						<meter value="7" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</p>
 					<p>Gestion de projet - Scrum
 						<meter value="13" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</p>
-					<p>C
+					<p>C/C++
 						<meter value="6" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</p>
-					<p>C++
-						<meter value="6" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
-					</p>
+	
 				</div>
 			</section>
 

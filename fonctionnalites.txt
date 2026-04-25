@@ -1,0 +1,5 @@
+# Fonctionnalités JQuery intégrées 
+
+* Bouton pour passer en mode nocturne,
+* Bouton pour imprimer le CV,
+* Texte généré dynamiquement.
