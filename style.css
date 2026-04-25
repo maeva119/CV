@@ -145,7 +145,7 @@ img {
 
 .langues li {
     padding: 7px 2px;
-    border-bottom: 1px solid rgba(240, 243, 248, 0.15);
+    border-bottom: none;
 }
 
 .jauge {
@@ -450,6 +450,10 @@ body.dark-mode #imprimer {
         padding: 24px 18px 28px;
     }
 
+    .sidebar .block {
+        border-top: 1pt solid #4f5f73 !important;
+    }
+
     .content,
     .content p,
     .content li,
@@ -505,7 +509,7 @@ body.dark-mode #imprimer {
     .content > section:not(.contactSection) {
         margin-top: 8px;
         padding-top: 7px;
-        border-top: 1px solid #aab6c4;
+        border-top: 1pt solid #48576a !important;
     }
 
     .experience {
@@ -586,7 +590,11 @@ body.dark-mode #imprimer {
     }
 
     body.dark-mode .content > section:not(.contactSection) {
-        border-top-color: #4b5d74 !important;
+        border-top-color: #5e738d !important;
+    }
+
+    body.dark-mode .sidebar .block {
+        border-top-color: #5e738d !important;
     }
 
     body.dark-mode .faire p .jauge,
