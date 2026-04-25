@@ -13,6 +13,7 @@ body {
     background: radial-gradient(circle at 20% 0%, #fbfcff, #f3f4f6 50%);
     color: #1e2a37;
     font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
     line-height: 1.45;
 }
 
@@ -25,7 +26,7 @@ img {
     width: 794px;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 270px 1fr;
     background: #ffffff;
     box-shadow: 0 18px 42px rgba(14, 24, 38, 0.14);
     min-height: 1122px;
@@ -72,7 +73,7 @@ img {
     border-bottom: none;
     text-transform: uppercase;
     letter-spacing: 0.02em;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -82,7 +83,7 @@ img {
 
 .sidebar .block p,
 .sidebar .block li {
-    font-size: 14px;
+    font-size: 16px;
     color: #ecedf0;
 }
 
@@ -91,11 +92,36 @@ img {
     line-height: 1.55;
 }
 
+.sidebar .contact {
+    padding-left: 0;
+}
+
+.sidebar .contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin: 6px 0;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+    font-size: 14px;
+}
+
+.sidebar .contact li i {
+    flex: 0 0 16px;
+    margin-top: 3px;
+    color: #b8cff1;
+    text-align: center;
+}
+
+.sidebar .contact li span {
+    flex: 1;
+}
+
 .content .block p {
     margin: 0;
     line-height: 1.45;
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .content p,
@@ -112,12 +138,6 @@ img {
     margin: 8px 0;
 }
 
-.sidebar .contact li {
-    white-space: normal;
-    overflow-wrap: anywhere;
-    font-size: 13px;
-}
-
 .langues {
     list-style: none;
     padding-left: 0;
@@ -125,7 +145,7 @@ img {
 
 .langues li {
     padding: 7px 2px;
-    border-bottom: 1px solid rgba(240, 243, 248, 0.15);
+    border-bottom: none;
 }
 
 .jauge {
@@ -169,8 +189,8 @@ img {
 
 .contactSection > div {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -6px;
+    right: -16px;
     display: flex;
     gap: 9px;
 }
@@ -182,10 +202,20 @@ img {
     background: linear-gradient(180deg, #ffffff 0%, #ecf2f8 100%);
     color: #27435f;
     font: inherit;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
-    padding: 5px 12px;
-    cursor: default;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#modeSombre:hover,
+#imprimer:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(22, 39, 57, 0.18);
 }
 
 .contactSection h1 {
@@ -204,7 +234,7 @@ img {
     min-height: 18px;
     color: #000;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .contact {
@@ -248,18 +278,18 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     color: #24364e;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .titreExperience p:last-child {
     margin-top: 2px;
     color: #000;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .descriptionExperience {
     color: #000;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .descriptionExperience p {
@@ -298,7 +328,7 @@ img {
     border: none;
     background: transparent;
     color: #000;
-    font-size: 13px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     width: calc((100% - 24px) / 3);
@@ -322,20 +352,198 @@ img {
     border: 1px solid #b7c6d8;
     background: #edf2f7;
     color: #000;
-    font-size: 13px;
+    font-size: 16px;
+}
+
+body.dark-mode {
+    background: radial-gradient(circle at 20% 0%, #111723, #0b1019 50%);
+    color: #e6ebf2;
+}
+
+body.dark-mode .main {
+    background: #121c2b;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.45);
+}
+
+body.dark-mode .sidebar {
+    background: #0e1726;
+}
+
+body.dark-mode .content .section h2,
+body.dark-mode .content .block h2,
+body.dark-mode .contactSection h1,
+body.dark-mode .titreExperience p:first-child,
+body.dark-mode .texteDynamique,
+body.dark-mode .content p,
+body.dark-mode .content li,
+body.dark-mode .content .block p,
+body.dark-mode .descriptionExperience,
+body.dark-mode .titreExperience p:last-child,
+body.dark-mode .faire p,
+body.dark-mode .etre p {
+    color: #e6ebf2;
+}
+
+body.dark-mode .etre p {
+    background: #102338;
+}
+
+body.dark-mode .content > section:not(.contactSection) {
+    border-top-color: #2f4055;
+}
+
+body.dark-mode .faire p .jauge,
+body.dark-mode .faire p .jauge::-webkit-meter-container,
+body.dark-mode .faire p .jauge::-webkit-meter-bar {
+    background: #314458;
+}
+
+body.dark-mode #modeSombre,
+body.dark-mode #imprimer {
+    border-color: #48607b;
+    background: linear-gradient(180deg, #1f2d40 0%, #172333 100%);
+    color: #ecf2fa;
 }
 
 @media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
     body {
         background: #fff;
         margin: 0;
         padding: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 
     .main {
-        width: 794px;
+        width: 792px;
         margin: 0;
         box-shadow: none;
+        max-height: none;
+        overflow: visible;
+        background: #ffffff !important;
+    }
+
+    .sidebar,
+    .content,
+    .section,
+    .experience,
+    .faire p,
+    .etre p,
+    .jauge {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .sidebar {
+        background: #1e3a5f !important;
+        color: #f6f7f9 !important;
+        padding: 24px 18px 28px;
+    }
+
+    .sidebar .block {
+        border-top: 1pt solid #4f5f73 !important;
+    }
+
+    .content,
+    .content p,
+    .content li,
+    .content .section h2,
+    .content .block h2,
+    .contactSection h1,
+    .titreExperience p:first-child,
+    .titreExperience p:last-child,
+    .descriptionExperience,
+    .texteDynamique,
+    .faire p,
+    .etre p {
+        color: #000 !important;
+    }
+
+    .sidebar .contact li i {
+        color: #dbe8f7 !important;
+    }
+
+    .faire p .jauge {
+        background: #d7e3f1 !important;
+    }
+
+    .faire p .jauge::-webkit-meter-container,
+    .faire p .jauge::-webkit-meter-bar {
+        background: #d7e3f1 !important;
+    }
+
+    .faire p .jauge::-webkit-meter-optimum-value,
+    .faire p .jauge::-moz-meter-bar {
+        background: #3f74b5 !important;
+    }
+
+    .content {
+        padding: 14px 18px 14px;
+    }
+
+    .contactSection h1 {
+        font-size: 25px;
+        line-height: 1.0;
+    }
+
+    .texteDynamique {
+        margin: 0 0 3px;
+        min-height: 14px;
+        font-size: 15px;
+    }
+
+    .section {
+        margin-top: 8px;
+    }
+
+    .content > section:not(.contactSection) {
+        margin-top: 8px;
+        padding-top: 7px;
+        border-top: 1pt solid #48576a !important;
+    }
+
+    .experience {
+        padding: 5px 0;
+        gap: 6px 16px;
+    }
+
+    .section h2 {
+        font-size: 16px;
+    }
+
+    .sectionCertifications {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 4px 10px;
+        margin-top: 8px;
+    }
+
+    .sectionCertifications .experience {
+        padding: 4px 0;
+        gap: 2px;
+    }
+
+    .sectionCertifications .experience .titreExperience p:first-child {
+        font-size: 12px;
+        line-height: 1.15;
+    }
+
+    .sectionCertifications .experience .titreExperience p:last-child {
+        font-size: 11px;
+    }
+
+    .etre p {
+        background: #edf2f7 !important;
+        border: 1px solid #d4d8dd !important;
     }
 
     .contactSection > div {
@@ -344,6 +552,63 @@ img {
 
     .sectionCertifications {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media print {
+    body.dark-mode {
+        background: #111723;
+        color: #e6ebf2;
+    }
+
+    body.dark-mode .main {
+        background: #121c2b !important;
+    }
+
+    body.dark-mode .sidebar {
+        background: #0e1726 !important;
+        color: #f6f7f9 !important;
+    }
+
+    body.dark-mode .content,
+    body.dark-mode .content p,
+    body.dark-mode .content li,
+    body.dark-mode .content .section h2,
+    body.dark-mode .content .block h2,
+    body.dark-mode .contactSection h1,
+    body.dark-mode .titreExperience p:first-child,
+    body.dark-mode .titreExperience p:last-child,
+    body.dark-mode .descriptionExperience,
+    body.dark-mode .texteDynamique,
+    body.dark-mode .faire p,
+    body.dark-mode .etre p {
+        color: #e6ebf2 !important;
+    }
+
+    body.dark-mode .etre p {
+        background: #102338 !important;
+    }
+
+    body.dark-mode .content > section:not(.contactSection) {
+        border-top-color: #5e738d !important;
+    }
+
+    body.dark-mode .sidebar .block {
+        border-top-color: #5e738d !important;
+    }
+
+    body.dark-mode .faire p .jauge,
+    body.dark-mode .faire p .jauge::-webkit-meter-container,
+    body.dark-mode .faire p .jauge::-webkit-meter-bar {
+        background: #314458 !important;
+    }
+
+    body.dark-mode .sidebar .block h3 {
+        color: #f6f7f9 !important;
+    }
+
+    body.dark-mode .sidebar .contact li i {
+        color: #a8d4ff !important;
     }
 }
 
