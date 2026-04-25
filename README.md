@@ -1,2 +1,2 @@
 # CV
-CV one page en html, css, jquery
+CV one-page en HTML, CSS et jQuery.

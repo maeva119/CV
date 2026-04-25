@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="CV one-page front-end avec jQuery">
-	<meta name="keywords" content="cv, mode sombre, impression, formation, experience, competences">
+	<meta name="keywords" content="cv, mode sombre, impression, formation, expérience, compétences">
 	<meta name="author" lang="fr" content="Chedjou Wokam Ange Maeva">
 	<meta name="robots" content="index, follow">
 	<title>CV - Ange Maeva</title>
@@ -22,80 +22,75 @@
 			</div>
 
 			<section class="block">
-				<h3>Profil Professionnel</h3>
+				<h3>Profil professionnel</h3>
 				<p>
-					Jeune étudiante en informatique option télécommunications et réseaux, j'ai opté pour une
-					spécialisation en cybersécurité.
-					Passionnée par les nouvelles technologies et la sécurité des systèmes, je suis motivée à développer
-					mes compétences dans
-					ce domaine en constante évolution. Face à la montée considérable des cybermenaces, je suis
-					consciente de l'importance
-					de la protection des données et des infrastructures critiques. Mon objectif est de contribuer à la
-					création de solutions
-					innovantes pour renforcer la sécurité des systèmes d'information et protéger les utilisateurs contre
-					les menaces en ligne.
+					Étudiante en informatique (option télécoms &amp; réseaux), spécialisée en cybersécurité. Passionnée par les nouvelles
+					technologies et la protection des systèmes. Motivée à contribuer à des solutions innovantes face aux cybermenaces.
 				</p>
 			</section>
 
-			<section class="block">
+			<section class="block infoPerso">
 				<h3>Informations personnelles</h3>
-				<ul>
+				<ul  class="contact">
+					<li>Adresse : Chaussée du Roeulx 1137, 7021 Mons</li>
+					<li>GSM : +32 465 20 11 62</li>
+					<li>E-mail : chedjouangemaevav@gmail.com</li>
 					<li>Date de naissance: 19/08/2005</li>
 					<li>Nationalité: Camerounaise</li>
 					<li>Ville: Mons</li>
-					<li>Statut: Etudiante</li>
+					<li>Statut: Étudiante</li>
 				</ul>
 			</section>
 
 			<section class="block">
 				<h3>Langues</h3>
 				<ul class="langues">
-					<li>Francais : 
+					<li>Français : 
 						Langue maternelle
 					</li>
 					<li>Anglais
-						<meter value="0" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
+						<meter value="8" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</li>
 				</ul>
 			</section>
 
 			<section class="block">
-				<h3>Centres d'interet</h3>
-				<p>Lecture,danse, musique</p>
+				<h3>Centres d'intérêt</h3>
+				<p>Lecture, danse, musique</p>
 			</section>
 		</aside>
 
 		<section class="content">
 			<section class="contactSection">
-				<h1>CHEDJOU WOKAM ANGE MAEVA</h1>
+				<div class="fonctionnalites">
+					<button id="modeSombre" aria-pressed="false" aria-label="Activer le mode sombre">Mode sombre</button>
+					<button id="imprimer" aria-label="Imprimer le CV">Imprimer</button>
+				</div>
+				<h1>ANGE&nbsp;MAEVA<br>CHEDJOU WOKAM</h1>
 				<p class="texteDynamique" aria-live="polite"></p>
-				<ul class="contact">
-					<li>Chaussée du Roeulx 1137, 7021 Mons</li>
-					<li>+32 465 20 11 62</li>
-					<li>chedjouangemaevav@gmail.com</li>
-				</ul>
+				
 			</section>
 
 			<section class="section">
-				<h2>Experiences professionnelles</h2>
+				<h2>Expériences professionnelles</h2>
 				<article class="experience">
 					<div class="titreExperience">
 						<p>Stage en Front-End</p>
 						<p>2024</p>
 					</div>
 					<div class="descriptionExperience">
-						<p>Developpement d'un site web d'une centrale de radio en HTML, Bootstrap et jQuery.</p>
+						<p>Développement d'un site web pour une centrale de radio en HTML, Bootstrap et jQuery.</p>
 					</div>
 				</article>
 				<article class="experience">
 					<div class="titreExperience">
-						<p>Projets Scolaires en équipe</p>
+						<p>Projets scolaires en équipe</p>
 						<p>2025-2026</p>
 					</div>
 					<div class="descriptionExperience">
-						<p>Conception et developpement d'un jeu vidéo en pygame.</p>
+						<p>Conception et développement d'un jeu vidéo avec Pygame.</p>
 						<p>Programmation d'un module autonome en Python avec Raspberry Pi mettant en avant la
-							methodologie Scrum pour la gestion de projets.</p>
+							méthodologie Scrum pour la gestion de projets.</p>
 					</div>
 				</article>
 			</section>
@@ -104,12 +99,12 @@
 				<h2>Formation</h2>
 				<article class="experience">
 					<div class="titreExperience">
-						<p>Première Année de lisence en Genie Logicile</p>
+						<p>Première année de licence en génie logiciel</p>
 						<p>2023 - 2024</p>
 					</div>
 					<div class="descriptionExperience">
-						<p>Institut universitaire et stratégique de l'estuaire - Specialisation developpement web et
-							conception d'application.</p>
+						<p>Institut universitaire et stratégique de l'estuaire - Spécialisation en développement web et
+							conception d'applications.</p>
 					</div>
 				</article>
 				<article class="experience">
@@ -118,12 +113,12 @@
 						<p>2024 - 2027</p>
 					</div>
 					<div class="descriptionExperience">
-						<p>Haute Ecole en Hainaut - Option Télécommunications et Réseaux spécialité Cybersécurité.</p>
+						<p>Haute École en Hainaut - Option Télécommunications et Réseaux, spécialité cybersécurité.</p>
 					</div>
 				</article>
 			</section>
 
-			<section class="section">
+			<section class="section sectionCertifications">
 				<h2>Certifications</h2>
 				<article class="experience">
 					<div class="titreExperience">
@@ -133,50 +128,59 @@
 				</article>
 				<article class="experience">
 					<div class="titreExperience">
-						<p>CCNA : Introduction to Networks</p>
+						<p>CCNA1 : Introduction to Networks</p>
 						<p>2026</p>
 					</div>
 				</article>
 			</section>
 
 			<section class="section">
-				<h2>Savoirs Faire</h2>
+				<h2>Savoir-faire</h2>
 				<div class="faire">
-					<p>HTML5
-						<meter value="0" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
+					<p>HTML
+						<meter value="14" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</p>
-					<p>CSS3
-						<meter value="0" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
+					<p>CSS
+						<meter value="13" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
+					</p>
+					<p>Bootstrap
+						<meter value="6" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</p>
 					<p>JavaScript
-						<meter value="0" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
+						<meter value="9" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</p>
 					<p>jQuery
-						<meter value="0" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
+						<meter value="13" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</p>
 					<p>PHP
-						<meter value="0" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
+						<meter value="9" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</p>
 					<p>Python
-						<meter value="0" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
+						<meter value="8" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</p>
 					<p>Linux
-						<meter value="0" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
+						<meter value="7" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</p>
 					<p>Windows Server
-						<meter value="0" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
+						<meter value="6" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</p>
 					<p>Cybersécurité
-						<meter value="0" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
+						<meter value="7" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</p>
 					<p>Gestion de projet - Scrum
-						<meter value="0" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
+						<meter value="13" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
+					</p>
+					<p>C
+						<meter value="6" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
+					</p>
+					<p>C++
+						<meter value="6" optimum="15" min="0" max="15" low="5" high="10" class="jauge"></meter>
 					</p>
 				</div>
 			</section>
 
 			<section class="section">
-				<h2>Savoirs Etre</h2>
+				<h2>Savoir-être</h2>
 				<div class="etre">
 					<p>Travail d'équipe</p>
 					<p>Communication</p>
